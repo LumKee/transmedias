@@ -1,15 +1,17 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0 auto;
     padding: 0;
-    background: #FFF0E8;
+    background: #0c270d;
+    overflow: hidden;
+
     @font-face {
         font-family: "Snap ITC";
         src: url("./fonts/snap itc.ttf") format("ttf"),
-       }
-    overflow: hidden;
+    };
 }
 
 /* Loader */
@@ -19,7 +21,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #FFF0E8;
+    /* background: linear-gradient(90deg, rgba(3,32,1,1) 0%, rgba(4,69,22,1) 100%); */
+    background: #193100;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,23 +30,287 @@ body {
     z-index: 999;
     overflow: hidden;
 }
+
 .loader-wrapper span {
     margin-top: 2%;
     font-family: "Snap ITC";
-    color: #8C5F41;
+    color: #f5e2a5;
     font-size: 36px;
 }
+
 .loader {
     display: inline-block;
-    height: 120px;
+    height: 300px;
     animation: loader 1s infinite ease;
 }
-@keyframes loader {
-    from {
-        transform: rotate(0deg);
-    }
 
-    to {
-        transform: rotate(360deg);
+/* Onboarding scene */
+svg:hover #feuille_droite {
+    fill: #193100;
+    animation: rightLeafsMove ease infinite;
+    animation-delay: 0ms;
+}
+
+@keyframes rightLeafsMove {
+    from {
+        transform: translateX(0) translateY(0);
     }
+    to {
+        transform: translateX(25px) translateY(35px);
+    }
+}
+.st0 {
+    fill: #FEBF1B;
+}
+
+.st1 {
+    fill: #7F9237;
+}
+
+.st2 {
+    fill: #FEFEFE;
+}
+
+.st3 {
+    fill: #FEAF1B;
+}
+
+.st4 {
+    fill: #FEDD5E;
+}
+
+.st5 {
+    fill: #FEAE1B;
+}
+
+.st6 {
+    fill: #FED84C;
+}
+
+.st7 {
+    fill: #FED643;
+}
+
+.st8 {
+    fill: #FED644;
+}
+
+.st9 {
+    fill: #FAA21B;
+}
+
+.st10 {
+    fill: #FECD33;
+}
+
+.st11 {
+    fill: #FED23C;
+}
+
+.st12 {
+    fill: #FEC725;
+}
+
+.st13 {
+    fill: #FEE372;
+}
+
+.st14 {
+    fill: #FEDE62;
+}
+
+.st15 {
+    fill: #FED039;
+}
+
+.st16 {
+    fill: #FEE16A;
+}
+
+.st17 {
+    fill: #FCCC74;
+}
+
+.st18 {
+    fill: #1A3201;
+}
+
+.st19 {
+    fill: #FDE298;
+}
+
+.st20 {
+    fill: #415F0E;
+}
+
+.st21 {
+    fill: #CFCB6F;
+}
+
+.st22 {
+    fill: #FDCC73;
+}
+
+.st23 {
+    fill: #FDE49C;
+}
+
+.st24 {
+    fill: #D3CD72;
+}
+
+.st25 {
+    fill: #819035;
+}
+
+.st26 {
+    fill: #3F5D0D;
+}
+
+.st27 {
+    fill: #193100;
+}
+
+.st28 {
+    fill: #2C2111;
+}
+
+.st29 {
+    fill: #9CA48E;
+}
+
+.st30 {
+    fill: #495931;
+}
+
+.st31 {
+    fill: #5E6D42;
+}
+
+.st32 {
+    fill: #ABB19F;
+}
+
+.st33 {
+    fill: #352915;
+}
+
+.st34 {
+    fill: #3B2F1C;
+}
+
+.st35 {
+    fill: #554325;
+}
+
+.st36 {
+    fill: #38422B;
+}
+
+.st37 {
+    fill: #2F3725;
+}
+
+.st38 {
+    fill: #423E26;
+}
+
+.st39 {
+    fill: #959D86;
+}
+
+.st40 {
+    fill: #74835F;
+}
+
+.st41 {
+    fill: #98A750;
+}
+
+.st42 {
+    fill: #363030;
+}
+
+.st43 {
+    fill: #949C85;
+}
+
+.st44 {
+    fill: #554C47;
+}
+
+.st45 {
+    fill: #2A2629;
+}
+
+.st46 {
+    fill: #4B4944;
+}
+
+.st47 {
+    fill: #7F7D74;
+}
+
+.st48 {
+    fill: #68665F;
+}
+
+.st49 {
+    fill: #B0ACA1;
+}
+
+.st50 {
+    fill: #E5E5E5;
+}
+
+.st51 {
+    fill: #211901;
+}
+
+.st52 {
+    fill: #E0E2DB;
+}
+
+.st53 {
+    fill: #606060;
+}
+
+.st54 {
+    fill: #6A592E;
+}
+
+.st55 {
+    fill: #455032;
+}
+
+.st56 {
+    fill: #4C603C;
+}
+
+.st57 {
+    fill: #3A3920;
+}
+
+.st58 {
+    fill: #A6854A;
+}
+
+.st59 {
+    fill: #866939;
+}
+
+.st60 {
+    fill: #537E4B;
+}
+
+.st61 {
+    fill: #66585B;
+}
+
+.st62 {
+    fill: #312100;
+}
+
+.st63 {
+    fill: #609863;
 }
