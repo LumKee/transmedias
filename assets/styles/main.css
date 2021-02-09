@@ -1,0 +1,370 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background: #0c270d;
+	overflow: hidden;
+	transform-style: preserve-3d;
+
+	@font-face {
+		font-family: "Snap ITC";
+		src: url("./fonts/snap itc.ttf") format("ttf"),
+	}
+
+	;
+}
+
+/* Loader */
+.loader-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* background: linear-gradient(90deg, rgba(3,32,1,1) 0%, rgba(4,69,22,1) 100%); */
+	background: #193100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.loader-wrapper span {
+	margin-top: 2%;
+	font-family: "Snap ITC";
+	color: #f5e2a5;
+	font-size: 36px;
+}
+
+.loader {
+	display: inline-block;
+	height: 150px;
+	animation: loader 1s infinite ease;
+}
+
+/* Onboarding scene */
+
+.logo-container {
+	position: absolute;
+	top: 20%;
+	left: 38.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.logo {
+	height: 200px;
+	z-index: 300;
+	transition-property: opacity;
+	transition-duration: 500ms;
+	transition-delay: 0ms;
+}
+
+svg:hover #Feuille {
+	transition-property: transform;
+	transition-duration: 500ms;
+	transition-delay: 0ms;
+}
+
+svg:hover #FG {
+	transition-property: transform;
+	transition-duration: 500ms;
+	transition-delay: 0ms;
+}
+
+svg:hover #FD {
+	transition-property: transform;
+	transition-duration: 500ms;
+	transition-delay: 0ms;
+}
+
+.perspective {
+	animation-name: zoom;
+	animation-duration: 1.2s;
+	animation-delay: 0ms;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+@keyframes zoom {
+	from {
+		transform: perspective(0px) translateX(0px) translateZ(0px);
+	}
+
+	to {
+		transform: perspective(100px) translateX(-25px) translateZ(98px);
+	}
+}
+
+.st0 {
+	fill: #1A3201;
+}
+
+.st1 {
+	fill: #FDC164;
+}
+
+.st2 {
+	fill: #FDD37D;
+}
+
+.st3 {
+	fill: #273B04;
+}
+
+.st4 {
+	fill: #FDCC73;
+}
+
+.st5 {
+	fill: #FDE49C;
+}
+
+.st6 {
+	fill: #FDE4BC;
+}
+
+.st7 {
+	fill: #335308;
+}
+
+.st8 {
+	fill: #FDDE90;
+}
+
+.st9 {
+	fill: #71852F;
+}
+
+.st10 {
+	fill: #3F5D0E;
+}
+
+.st11 {
+	fill: #D3CD72;
+}
+
+.st12 {
+	fill: #A1AA46;
+}
+
+.st13 {
+	fill: #87983A;
+}
+
+.st14 {
+	fill: #556E19;
+}
+
+.st15 {
+	fill: #F8B36A;
+}
+
+.st16 {
+	fill: #FDC264;
+}
+
+.st17 {
+	fill: #FCCE75;
+}
+
+.st18 {
+	fill: #FDD27C;
+}
+
+.st19 {
+	fill: #FDE5BC;
+}
+
+.st20 {
+	fill: #223602;
+}
+
+.st21 {
+	fill: #2A3D05;
+}
+
+.st22 {
+	fill: #D2CC6F;
+}
+
+.st23 {
+	fill: #59701C;
+}
+
+.st24 {
+	fill: #879238;
+}
+
+.st25 {
+	fill: #A0A945;
+}
+
+.st26 {
+	fill: #73862F;
+}
+
+.st27 {
+	fill: #415E0E;
+}
+
+.st28 {
+	fill: #FDE298;
+}
+
+.st29 {
+	fill: #455032;
+}
+
+.st30 {
+	fill: #2C2111;
+}
+
+.st31 {
+	fill: #9CA48E;
+}
+
+.st32 {
+	fill: #495931;
+}
+
+.st33 {
+	fill: #5E6D42;
+}
+
+.st34 {
+	fill: #ABB19F;
+}
+
+.st35 {
+	fill: #352915;
+}
+
+.st36 {
+	fill: #3B2F1C;
+}
+
+.st37 {
+	fill: #554325;
+}
+
+.st38 {
+	fill: #38422B;
+}
+
+.st39 {
+	fill: #2F3725;
+}
+
+.st40 {
+	fill: #423E26;
+}
+
+.st41 {
+	fill: #959D86;
+}
+
+.st42 {
+	fill: #74835F;
+}
+
+.st43 {
+	fill: #98A750;
+}
+
+.st44 {
+	fill: #363030;
+}
+
+.st45 {
+	fill: #949C85;
+}
+
+.st46 {
+	fill: #554C47;
+}
+
+.st47 {
+	fill: #2A2629;
+}
+
+.st48 {
+	fill: #4B4944;
+}
+
+.st49 {
+	fill: #7F7D74;
+}
+
+.st50 {
+	fill: #68665F;
+}
+
+.st51 {
+	fill: #B0ACA1;
+}
+
+.st52 {
+	fill: #E5E5E5;
+}
+
+.st53 {
+	fill: #211901;
+}
+
+.st54 {
+	fill: #FEFEFE;
+}
+
+.st55 {
+	fill: #606060;
+}
+
+.st56 {
+	fill: #E0E2DB;
+}
+
+.st57 {
+	fill: #6A592E;
+}
+
+.st58 {
+	fill: #4C603C;
+}
+
+.st59 {
+	fill: #3A3920;
+}
+
+.st60 {
+	fill: #A6854A;
+}
+
+.st61 {
+	fill: #866939;
+}
+
+.st62 {
+	fill: #537E4B;
+}
+
+.st63 {
+	fill: #66585B;
+}
+
+.st64 {
+	fill: #312100;
+}
+
+.st65 {
+	fill: #609863;
+}
