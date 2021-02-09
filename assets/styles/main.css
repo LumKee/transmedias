@@ -59,258 +59,95 @@ svg:hover #feuille_droite {
         transform: translateX(25px) translateY(35px);
     }
 }
-.st0 {
-    fill: #FEBF1B;
+
+body{
+    transform-style: preserve-3d;
 }
 
-.st1 {
-    fill: #7F9237;
+.perspective
+{
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    
 }
 
-.st2 {
-    fill: #FEFEFE;
-}
+@keyframes zoom {
+    from {
+        transform: perspective(0px) translateX(0px) translateZ(0px);
+    }
+  
+    to {
+        transform: perspective(100px) translateX(-25px) translateZ(98px);
+    }
+  }
 
-.st3 {
-    fill: #FEAF1B;
-}
-
-.st4 {
-    fill: #FEDD5E;
-}
-
-.st5 {
-    fill: #FEAE1B;
-}
-
-.st6 {
-    fill: #FED84C;
-}
-
-.st7 {
-    fill: #FED643;
-}
-
-.st8 {
-    fill: #FED644;
-}
-
-.st9 {
-    fill: #FAA21B;
-}
-
-.st10 {
-    fill: #FECD33;
-}
-
-.st11 {
-    fill: #FED23C;
-}
-
-.st12 {
-    fill: #FEC725;
-}
-
-.st13 {
-    fill: #FEE372;
-}
-
-.st14 {
-    fill: #FEDE62;
-}
-
-.st15 {
-    fill: #FED039;
-}
-
-.st16 {
-    fill: #FEE16A;
-}
-
-.st17 {
-    fill: #FCCC74;
-}
-
-.st18 {
-    fill: #1A3201;
-}
-
-.st19 {
-    fill: #FDE298;
-}
-
-.st20 {
-    fill: #415F0E;
-}
-
-.st21 {
-    fill: #CFCB6F;
-}
-
-.st22 {
-    fill: #FDCC73;
-}
-
-.st23 {
-    fill: #FDE49C;
-}
-
-.st24 {
-    fill: #D3CD72;
-}
-
-.st25 {
-    fill: #819035;
-}
-
-.st26 {
-    fill: #3F5D0D;
-}
-
-.st27 {
-    fill: #193100;
-}
-
-.st28 {
-    fill: #2C2111;
-}
-
-.st29 {
-    fill: #9CA48E;
-}
-
-.st30 {
-    fill: #495931;
-}
-
-.st31 {
-    fill: #5E6D42;
-}
-
-.st32 {
-    fill: #ABB19F;
-}
-
-.st33 {
-    fill: #352915;
-}
-
-.st34 {
-    fill: #3B2F1C;
-}
-
-.st35 {
-    fill: #554325;
-}
-
-.st36 {
-    fill: #38422B;
-}
-
-.st37 {
-    fill: #2F3725;
-}
-
-.st38 {
-    fill: #423E26;
-}
-
-.st39 {
-    fill: #959D86;
-}
-
-.st40 {
-    fill: #74835F;
-}
-
-.st41 {
-    fill: #98A750;
-}
-
-.st42 {
-    fill: #363030;
-}
-
-.st43 {
-    fill: #949C85;
-}
-
-.st44 {
-    fill: #554C47;
-}
-
-.st45 {
-    fill: #2A2629;
-}
-
-.st46 {
-    fill: #4B4944;
-}
-
-.st47 {
-    fill: #7F7D74;
-}
-
-.st48 {
-    fill: #68665F;
-}
-
-.st49 {
-    fill: #B0ACA1;
-}
-
-.st50 {
-    fill: #E5E5E5;
-}
-
-.st51 {
-    fill: #211901;
-}
-
-.st52 {
-    fill: #E0E2DB;
-}
-
-.st53 {
-    fill: #606060;
-}
-
-.st54 {
-    fill: #6A592E;
-}
-
-.st55 {
-    fill: #455032;
-}
-
-.st56 {
-    fill: #4C603C;
-}
-
-.st57 {
-    fill: #3A3920;
-}
-
-.st58 {
-    fill: #A6854A;
-}
-
-.st59 {
-    fill: #866939;
-}
-
-.st60 {
-    fill: #537E4B;
-}
-
-.st61 {
-    fill: #66585B;
-}
-
-.st62 {
-    fill: #312100;
-}
-
-.st63 {
-    fill: #609863;
-}
+.st0{fill:#1A3201;}
+	.st1{fill:#FDC164;}
+	.st2{fill:#FDD37D;}
+	.st3{fill:#273B04;}
+	.st4{fill:#FDCC73;}
+	.st5{fill:#FDE49C;}
+	.st6{fill:#FDE4BC;}
+	.st7{fill:#335308;}
+	.st8{fill:#FDDE90;}
+	.st9{fill:#71852F;}
+	.st10{fill:#3F5D0E;}
+	.st11{fill:#D3CD72;}
+	.st12{fill:#A1AA46;}
+	.st13{fill:#87983A;}
+	.st14{fill:#556E19;}
+	.st15{fill:#F8B36A;}
+	.st16{fill:#FDC264;}
+	.st17{fill:#FCCE75;}
+	.st18{fill:#FDD27C;}
+	.st19{fill:#FDE5BC;}
+	.st20{fill:#223602;}
+	.st21{fill:#2A3D05;}
+	.st22{fill:#D2CC6F;}
+	.st23{fill:#59701C;}
+	.st24{fill:#879238;}
+	.st25{fill:#A0A945;}
+	.st26{fill:#73862F;}
+	.st27{fill:#415E0E;}
+	.st28{fill:#FDE298;}
+	.st29{fill:#193100;}
+	.st30{fill:#2C2111;}
+	.st31{fill:#9CA48E;}
+	.st32{fill:#495931;}
+	.st33{fill:#5E6D42;}
+	.st34{fill:#ABB19F;}
+	.st35{fill:#352915;}
+	.st36{fill:#3B2F1C;}
+	.st37{fill:#554325;}
+	.st38{fill:#38422B;}
+	.st39{fill:#2F3725;}
+	.st40{fill:#423E26;}
+	.st41{fill:#959D86;}
+	.st42{fill:#74835F;}
+	.st43{fill:#98A750;}
+	.st44{fill:#363030;}
+	.st45{fill:#949C85;}
+	.st46{fill:#554C47;}
+	.st47{fill:#2A2629;}
+	.st48{fill:#4B4944;}
+	.st49{fill:#7F7D74;}
+	.st50{fill:#68665F;}
+	.st51{fill:#B0ACA1;}
+	.st52{fill:#E5E5E5;}
+	.st53{fill:#211901;}
+	.st54{fill:#FEFEFE;}
+	.st55{fill:#606060;}
+	.st56{fill:#E0E2DB;}
+	.st57{fill:#6A592E;}
+	.st58{fill:#455032;}
+	.st59{fill:#4C603C;}
+	.st60{fill:#3A3920;}
+	.st61{fill:#A6854A;}
+	.st62{fill:#866939;}
+	.st63{fill:#537E4B;}
+	.st64{fill:#66585B;}
+	.st65{fill:#312100;}
+	.st66{fill:#609863;}
