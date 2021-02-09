@@ -74,6 +74,17 @@ svg:hover #Feuille {
 	transition-delay: 0ms;
 }
 
+svg:hover #FG {
+	transition-property: transform;
+	transition-duration: 500ms;
+	transition-delay: 0ms;
+}
+
+svg:hover #FD {
+	transition-property: transform;
+	transition-duration: 500ms;
+	transition-delay: 0ms;
+}
 .perspective {
 	animation-name: zoom;
 	animation-duration: 1.5s;
