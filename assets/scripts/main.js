@@ -1,7 +1,7 @@
-// setTimeout(function() {
-//     $(".loader-wrapper").fadeToggle();
-//     $('body').css('overflow','hidden');
-// }, 3600);
+setTimeout(function() {
+    $(".loader-wrapper").fadeToggle();
+    $('body').css('overflow','hidden');
+}, 3600);
 
 let leafs = document.getElementById('Feuille');
 let leafsLeft = document.getElementById('FG');
