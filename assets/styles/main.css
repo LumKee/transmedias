@@ -19,8 +19,8 @@ body {
 
 /* Loader */
 .loader-wrapper {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -93,6 +93,7 @@ svg:hover #FD {
 	animation-timing-function: ease-out;
 	animation-fill-mode: forwards;
 	animation-play-state: paused;
+	display: block;
 }
 
 @keyframes zoom {
@@ -103,6 +104,72 @@ svg:hover #FD {
 	to {
 		transform: perspective(100px) translateX(-25px) translateZ(98px);
 	}
+}
+
+/* Animation feuille */
+
+#FG.left-transition
+{
+	animation-name: moveLeft;
+	animation-timing-function: ease-out;
+	animation-duration: 5s;
+}
+
+@keyframes moveLeft {
+	0% {
+		transform: translateX(0px) translateY(0px);
+	}
+
+	5% {
+		transform: translateX(-225px) translateY(200px);
+	}
+
+	93% {
+		transform: translateX(-225px) translateY(200px);
+	}
+
+	100% {
+		transform: translateX(0px) translateY(0px);
+	}
+}
+
+
+#FD.right-transition
+{
+	animation-name: moveRight;
+	animation-timing-function: ease-out;
+	animation-duration: 5s;
+}
+
+@keyframes moveRight {
+	0% {
+		transform: translateX(0px) translateY(0px);
+	}
+
+	5% {
+		transform: translateX(225px) translateY(200px);;
+	}
+
+	93% {
+		transform: translateX(225px) translateY(200px);;
+	}
+
+	100% {
+		transform: translateX(0px) translateY(0px);
+	}
+}
+
+
+/* WEBGL */ 
+
+.webgl-content
+{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
 }
 
 .st0 {
