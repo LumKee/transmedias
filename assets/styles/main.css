@@ -91,6 +91,7 @@ body {
 }
 
 svg #grotteEntrance_1_ {
+	cursor: pointer;
 	display: none;
 	transition-duration: 500ms;
 	transition-delay: 0ms;

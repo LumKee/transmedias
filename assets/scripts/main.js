@@ -7,7 +7,6 @@ let leafs = document.getElementById('Feuille');
 let leafsLeft = document.getElementById('FG');
 let leafsRight = document.getElementById('FD');
 let entrance = document.getElementById('grotteEntrance_1_')
-let webgl = document.querySelector('.webgl-content');
 let perspective = document.querySelector('.perspective');
 
 function leafsOut() {
