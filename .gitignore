@@ -103,6 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-# Sound files
-.mp4
-.mp3
+# 3D build
+/Build
+/TemplateData

@@ -8,6 +8,7 @@ let leafsLeft = document.getElementById('FG');
 let leafsRight = document.getElementById('FD');
 let entrance = document.getElementById('grotteEntrance_1_')
 let perspective = document.querySelector('.perspective');
+let webgl = document.querySelector('.webgl-content');
 
 function leafsOut() {
     leafsLeft.classList.add("left-transition");
@@ -28,6 +29,7 @@ function travelling() {
     
     setTimeout(function () {
         perspective.style.display = 'none';
+        webgl.style.display='block';
     }, 1200);
 };
 entrance.addEventListener('click', travelling, false);
