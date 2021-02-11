@@ -201,7 +201,7 @@ svg:hover #FD {
 
 /* WEBGL */ 
 
-.webgl-content
+#unity-container
 {
 	display: none;
 	position: absolute;
@@ -209,6 +209,13 @@ svg:hover #FD {
 	top: 0;
 	width: 100vw;
 	height: 100vh;
+}
+
+#unity-canvas
+{
+	display: none;
+	width: 100vw!important;
+	height: 100vh!important;
 }
 
 .st0 {

@@ -6,7 +6,8 @@ setTimeout(function() {
 let leafs = document.getElementById('Feuille');
 let leafsLeft = document.getElementById('FG');
 let leafsRight = document.getElementById('FD');
-let webgl = document.querySelector('.webgl-content');
+let webgl = document.querySelector('.unity-desktop');
+let canva = document.getElementById('unity-canvas');
 let perspective = document.querySelector('.perspective');
 
 function leafsOut() {
@@ -24,6 +25,7 @@ function travelling() {
     perspective.style.animationPlayState = 'running';
     setTimeout(function() {
         webgl.style.display='block';
+        canva.style.display='block';
         perspective.style.display='none';
     }, 1200);
 };
