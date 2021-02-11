@@ -75,7 +75,7 @@ h1 {
 	animation-delay: 0.9s;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	font-family: "Snap ITC";
+	font-family: "Herculanum";
 }
 
 .sound {
@@ -92,7 +92,7 @@ h1 {
 
 .sound span {
 	font-size: 24px;
-	font-family: "Snap ITC";
+	font-family: "Ruluko";
 	color: #3CA690;
 }
 
