@@ -32,9 +32,10 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: url("../../images/background.jpg");
+	background: rgb(0 16 12);
+	/* background-image: url("../../images/background.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: center; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -53,7 +54,11 @@ body {
 .loader {
 	display: inline-block;
 	height: 150px;
-	animation: loader 1s infinite ease;
+	animation-name: fondu;
+	animation-duration: 1s;
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards;
+	opacity: 0;
 }
 
 @keyframes fondu {
@@ -68,11 +73,11 @@ body {
 
 h1 {
 	margin-top: -43px;
-	font-size: 26;
+	font-size: 24px;
 	color: #fff;
 	animation-name: fondu;
 	animation-duration: 1s;
-	animation-delay: 0.9s;
+	animation-delay: 0.8s;
 	animation-fill-mode: forwards;
 	opacity: 0;
 	font-family: "Herculanum";
@@ -98,6 +103,31 @@ h1 {
 
 .sound img {
 	height: 30px;
+}
+
+.launch-btn {
+	margin-top: 24px;
+	background: rgb(3 37 28);
+	outline: none;
+	cursor: pointer;
+	color: white;
+	border: none;
+	font-family: "Ruluko";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	padding: 12px 24px;
+	transition: 300ms ease-in;
+	animation-name: fondu;
+	animation-duration: 1s;
+	animation-delay: 0.9s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.launch-btn:hover {
+	background: rgb(214 212 212);
+	color: rgb(0 16 12);
 }
 
 /* Onboarding scene */
