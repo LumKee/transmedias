@@ -50,7 +50,7 @@ body {
 
 .loader {
 	display: inline-block;
-	height: 150px;
+	height: 200px;
 	animation-name: fondu;
 	animation-duration: 1s;
 	animation-delay: 0.4s;
@@ -78,28 +78,6 @@ h1 {
 	animation-fill-mode: forwards;
 	opacity: 0;
 	font-family: "Herculanum";
-}
-
-.sound {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	bottom: 180px;
-	animation-name: fondu;
-	animation-duration: 1s;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
-	opacity: 0;
-}
-
-.sound span {
-	font-size: 24px;
-	font-family: "Ruluko";
-	color: #3CA690;
-}
-
-.sound img {
-	height: 30px;
 }
 
 .launch-btn {
